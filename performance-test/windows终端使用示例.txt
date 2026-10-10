@@ -1,0 +1,6 @@
+python C:\Users\Administrator\Desktop\测试脚本\模型性能测试\run_benchmarks.py --llm_url http://10.0.20.51:8080/v1--api_key sk-Nbjwj3na9DD9Gs75NOXC-mJ-cDmI62nM--model Qwen3.5-35B-A3B --use_long_context
+
+
+
+
+python C:\Users\Administrator\Desktop\测试脚本\模型性能测试\run_benchmarks.py --llm_url https://aigw.intra.knownsec.com/local-qwen/v1 --api_key a537debe-04b0-4cc6-a6f6-3e65416d7d2a --model Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2 --use_long_context

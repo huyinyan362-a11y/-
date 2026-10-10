@@ -1,0 +1,24 @@
+{
+  "api": {
+    "base_url": "http://10.0.20.51:8080/v1",
+    "api_key": "sk-ntr-x_LURtpAL4eW4dpK1ViNxkBWVrxd",
+    "model": "qwen3.5-27b"
+  },
+  "test": {
+    "context_lengths": [8000, 16000, 32000, 64000, 128000, 256000, 1000000],
+    "tests_per_length": 5,
+    "needle_depths": [0, 25, 50, 75, 100],
+    "timeout": 1000,
+    "max_tokens": 65535,
+    "temperature": 0,
+    "concurrent_requests": 1
+  },
+  "notes": {
+    "base_url": "你的 API Base URL，例如：https://api.openai.com/v1 或 https://api.deepseek.com/v1",
+    "api_key": "你的 API Key",
+    "model": "模型名称，例如：gpt-4, gpt-4-turbo, deepseek-chat 等",
+    "context_lengths": "要测试的上下文长度列表（tokens）",
+    "tests_per_length": "每个长度测试次数（不同位置）",
+    "needle_depths": "针在上下文中的位置（百分比）"
+  }
+}

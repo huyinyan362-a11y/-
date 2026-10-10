@@ -1,0 +1,108 @@
+{
+  "aipy_api": {
+    "base_url": "http://127.0.0.1:41970",
+    "api_key": "CavNm1xwc6HJM8FcEeDfa"
+  },
+
+  "platform_api": {
+    "base_url": "http://10.8.12.22:8880/api/v2/open/worksheet",
+    "app_key": "7cd1dae7bf786952",
+    "sign": "ZDQwOWFjNzcwNzExZGQ4OGU5Nzg2ZmZiZTA5ZjhmOWQ5Y2EyZTdhYWY4NmYzM2VjYWEzMmEyMjM3ODZkYTAxYQ==",
+    "default_worksheet": "一体机测试",
+    "worksheets": {
+      "测试平台": {
+        "worksheet_id": "69cf8d574f0b9c1e7f1da331",
+        "view_id": "",
+        "fields": {
+          "task_id": "69cf92594f0b9c1e7f1da352",
+          "standard_task": "69cf8fd84f0b9c1e7f1da34c",
+          "model_list": "69cf8ed24f0b9c1e7f1da344",
+          "task_status": "69cf951d4f0b9c1e7f1da36e",
+          "agent": "69d4c8c34f0b9c1e7f1da402",
+          "exec_time": "69cf92594f0b9c1e7f1da353",
+          "tokens": "69cf92594f0b9c1e7f1da354",
+          "success": "69cf92594f0b9c1e7f1da355",
+          "exec_date": "69d4da734f0b9c1e7f1da43a",
+          "failure_reason": "69cf92594f0b9c1e7f1da356",
+          "failure_analysis": "69cf92c04f0b9c1e7f1da36a",
+          "judge_reason": "",
+          "attachment": "69cf8d574f0b9c1e7f1da334"
+        }
+      },
+      "模型测评任务": {
+        "worksheet_id": "692cfe4eef619369ada81503",
+        "view_id": "",
+        "fields": {
+          "task_id": "69d6110e4f0b9c1e7f1da4e0",
+          "standard_task": "692d017aef619369ada81562",
+          "model_list": "692d6e99ef619369ada8160e",
+          "exec_status": "69d61c2e4f0b9c1e7f1da4ec",
+          "task_status": "692cfe4eef619369ada81507",
+          "agent": "69d620ce4f0b9c1e7f1da50a",
+          "exec_time": "692cfe4eef619369ada81508",
+          "tokens": "692cfe4eef619369ada81511",
+          "success": "692cfe4eef619369ada81507",
+          "exec_date": "692cfe4eef619369ada81504",
+          "failure_reason": "692cfe4eef619369ada8150f",
+          "failure_analysis": "692cfe4eef619369ada81506",
+          "judge_reason": "692cfe4eef619369ada81509",
+          "attachment": "692cfe4eef619369ada8150e"
+        }
+      },
+      "一体机测试": {
+        "worksheet_id": "68faf124ef619369ada811f3",
+        "view_id": "",
+        "fields": {
+          "task_id": "69d611f94f0b9c1e7f1da4e4",
+          "standard_task": "68faf124ef619369ada811fb",
+          "model_list": "68faf124ef619369ada811fc",
+          "exec_status": "69d61c5a4f0b9c1e7f1da4f0",
+          "task_status": "68faf124ef619369ada811f7",
+          "agent": "69d620ee4f0b9c1e7f1da510",
+          "exec_time": "68faf124ef619369ada811f8",
+          "tokens": "68faf124ef619369ada81206",
+          "success": "68faf124ef619369ada811f7",
+          "exec_date": "68faf124ef619369ada811f4",
+          "failure_reason": "68faf124ef619369ada81202",
+          "failure_analysis": "68faf124ef619369ada811f6",
+          "judge_reason": "68faf124ef619369ada811f9",
+          "attachment": "68faf124ef619369ada81200"
+        }
+      },
+      "标准任务测试": {
+        "worksheet_id": "68303d492f2e9582e60f3138",
+        "view_id": "",
+        "fields": {
+          "task_id": "69d612174f0b9c1e7f1da4e8",
+          "standard_task": "683052362f7dad5ce4aef3c4",
+          "model_list": "683052362f7dad5ce4aef3c6",
+          "exec_status": "69d61c824f0b9c1e7f1da4f4",
+          "task_status": "68303d492f2e9582e60f3140",
+          "agent": "69d621064f0b9c1e7f1da516",
+          "exec_time": "68303d492f2e9582e60f3141",
+          "tokens": "6870a5b70d48bfd874666ee7",
+          "success": "68303d492f2e9582e60f3140",
+          "exec_date": "68303d492f2e9582e60f313d",
+          "failure_reason": "68343e932f7dad5ce4aef77e",
+          "failure_analysis": "68303d492f2e9582e60f313f",
+          "judge_reason": "68303d492f2e9582e60f3142",
+          "attachment": "6831e64c2f7dad5ce4aef47a"
+        }
+      }
+    }
+  },
+  "task_settings": {
+    "status_filter": "待执行",
+    "page_size": 100,
+    "auto_start": true,
+    "monitor_timeout": 3600,
+    "max_concurrent_tasks": 2
+  },
+  "judge_api": {
+    "api_url": "https://api.trustoken.cn/v1/chat/completions",
+    "api_key": "sk-KAAhd9cPXZotKVSS28RCEZGLJi3arsLIi3uG9U4lLcvHUweN",
+    "model": "glm-4.7",
+    "timeout": 300,
+    "judge_prompt": "你是一个任务执行判官，需要根据任务执行结果判断任务是否成功完成。\n\n以下是从task.json文件中提取的任务执行信息：\n\n{task_info}\n\n判断标准：\n1. 成功：任务完整执行完成，用户需求得到满足，没有出现错误或中断\n2. 失败：任务执行过程中出现错误、被中断、模型拒绝执行、或结果明显不符合要求\n3. 待定：无法确定任务是否成功完成\n\n失败原因分类（当判断为失败时，必须选择以下其中一种）：\n- 代码质量问题：生成的代码存在语法错误、逻辑错误、性能问题或安全漏洞\n- 中文乱码问题：输出内容存在中文乱码或编码错误\n- 没有自主决策方案：面对需要判断的场景时，模型反复询问用户而非自主做出决策\n- 代码块标记问题：代码块未按规范使用HTML注释格式包裹（如<!-- Block-Start -->和<!-- Block-End -->）\n- max_token超限被截断：生成内容超出模型最大token限制，导致代码或文本被强制截断不完整\n- 任务规划问题：任务分解不合理、步骤顺序混乱或遗漏关键执行环节\n- 任务理解问题：模型对用户意图理解偏差，导致执行方向与需求不符\n- 其他：不属于以上任何分类的失败原因\n\n请仔细分析上述任务执行信息，判断任务是否成功，如果失败则分析失败原因类型。\n\n请只返回JSON格式结果，不要包含其他内容：\n{{\\\"result\\\": \\\"成功/失败/待定\\\", \\\"reason\\\": \\\"判断原因说明\\\", \\\"failure_type\\\": \\\"失败原因分类（仅当result为失败时填写）\\\", \\\"confidence\\\": \\\"高/中/低\\\"}}"
+  }
+}
